@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Descubre Color Mix, un divertido juego móvil de lógica donde debes organizar bolas de colores en diferentes recipientes.">
+
+    <meta name="theme-color" content="#171027">
+
+    <title>Color Mix | Juego de colores</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#inicio" class="logo">
+                <span class="logo-icon">●</span>
+                Color<span>Mix</span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Abrir menú"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#juego">El juego</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#documentacion">Documentación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- PRESENTACIÓN -->
+        <section class="hero" id="inicio">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="eyebrow">
+                        <span class="status-dot"></span>
+                        UN JUEGO DE LÓGICA Y COLORES
+                    </span>
+
+                    <h1>
+                        Piensa, organiza
+                        y disfruta con
+                        <span>Color Mix.</span>
+                    </h1>
+
+                    <p>
+                        Pon a prueba tu ingenio organizando bolas de
+                        diferentes colores. Supera niveles, encuentra
+                        soluciones y diviértete en cada partida.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#juego" class="btn btn-primary">
+                            Descubrir el juego
+                            <span>→</span>
+                        </a>
+
+                        <a href="#caracteristicas" class="btn btn-outline">
+                            Conocer características
+                        </a>
+                    </div>
+
+                    <div class="hero-info">
+                        <span>🎮 Juego móvil</span>
+                        <span>🟣 Android</span>
+                        <span>🧩 Rompecabezas</span>
+                    </div>
+
+                </div>
+
+
+                <!-- ILUSTRACIÓN TEMPORAL DEL JUEGO -->
+                <div class="hero-visual">
+
+                    <div class="game-card">
+
+                        <div class="game-card-header">
+                            <span>COLOR MIX</span>
+                            <span class="level-badge">NIVEL 01</span>
+                        </div>
+
+                        <div class="tubes">
+
+                            <div class="tube">
+                                <span class="ball ball-red"></span>
+                                <span class="ball ball-blue"></span>
+                                <span class="ball ball-yellow"></span>
+                                <span class="ball ball-green"></span>
+                            </div>
+
+                            <div class="tube">
+                                <span class="ball ball-green"></span>
+                                <span class="ball ball-red"></span>
+                                <span class="ball ball-blue"></span>
+                                <span class="ball ball-yellow"></span>
+                            </div>
+
+                            <div class="tube">
+                                <span class="ball ball-yellow"></span>
+                                <span class="ball ball-green"></span>
+                                <span class="ball ball-red"></span>
+                                <span class="ball ball-blue"></span>
+                            </div>
+
+                        </div>
+
+                        <div class="game-card-footer">
+                            <span>🎯 Organiza los colores</span>
+                        </div>
+
+                    </div>
+
+                    <div class="floating-ball floating-one"></div>
+                    <div class="floating-ball floating-two"></div>
+                    <div class="floating-ball floating-three"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE EL JUEGO -->
+        <section class="section" id="juego">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">CONOCE COLOR MIX</span>
+
+                    <h2>Un desafío para tu mente</h2>
+
+                    <p>
+                        Color Mix es un videojuego móvil en el que debes
+                        organizar bolas de diferentes colores dentro
+                        de recipientes. Cada nivel representa un nuevo
+                        desafío que requiere concentración y estrategia.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+
+                    <article class="about-card">
+                        <div class="card-icon purple">🧠</div>
+                        <h3>Desarrolla tu lógica</h3>
+                        <p>
+                            Analiza cada movimiento y encuentra la
+                            mejor manera de completar los niveles.
+                        </p>
+                    </article>
+
+                    <article class="about-card">
+                        <div class="card-icon yellow">🎨</div>
+                        <h3>Organiza los colores</h3>
+                        <p>
+                            Agrupa las bolas según su color hasta
+                            completar correctamente cada recipiente.
+                        </p>
+                    </article>
+
+                    <article class="about-card">
+                        <div class="card-icon green">🏆</div>
+                        <h3>Supera desafíos</h3>
+                        <p>
+                            Avanza por los niveles y continúa
+                            mejorando tu estrategia de juego.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CARACTERÍSTICAS -->
+        <section class="section features-section" id="caracteristicas">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">FUNCIONALIDADES</span>
+
+                    <h2>Todo lo que encontrarás</h2>
+
+                    <p>
+                        Descubre las herramientas que forman parte
+                        de la experiencia de Color Mix.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+                        <span class="feature-icon">🎯</span>
+                        <h3>Sistema de niveles</h3>
+                        <p>
+                            Completa los desafíos y avanza en el juego.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon">🔄</span>
+                        <h3>Mezclar bolas</h3>
+                        <p>
+                            Utiliza la función de mezcla para reorganizar
+                            las bolas de un recipiente.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon">➕</span>
+                        <h3>Capacidad adicional</h3>
+                        <p>
+                            Utiliza ayudas para disponer de más espacio
+                            durante la partida.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon">💾</span>
+                        <h3>Progreso guardado</h3>
+                        <p>
+                            SQLite almacena el progreso y los intentos
+                            del jugador en el dispositivo.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon">🎁</span>
+                        <h3>Intentos adicionales</h3>
+                        <p>
+                            La experiencia contempla anuncios
+                            recompensados para recuperar intentos.
+                        </p>
+                    </article>
+
+                    <article class="feature-card">
+                        <span class="feature-icon">📱</span>
+                        <h3>Experiencia móvil</h3>
+                        <p>
+                            Una experiencia diseñada para dispositivos
+                            Android.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DOCUMENTACIÓN -->
+        <section class="section documentation-section" id="documentacion">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">INFORMACIÓN OFICIAL</span>
+
+                    <h2>Documentación de Color Mix</h2>
+
+                    <p>
+                        Consulta las políticas y condiciones relacionadas
+                        con el uso de nuestra aplicación.
+                    </p>
+                </div>
+
+                <div class="documents-grid">
+
+                    <a href="pages/privacidad.html" class="document-card">
+                        <span>🔒</span>
+                        <div>
+                            <h3>Política de privacidad</h3>
+                            <p>Conoce cómo se tratan los datos.</p>
+                        </div>
+                        <span class="document-arrow">→</span>
+                    </a>
+
+                    <a href="pages/seguridad.html" class="document-card">
+                        <span>🛡️</span>
+                        <div>
+                            <h3>Política de seguridad</h3>
+                            <p>Información sobre protección y seguridad.</p>
+                        </div>
+                        <span class="document-arrow">→</span>
+                    </a>
+
+                    <a href="pages/terminos.html" class="document-card">
+                        <span>📄</span>
+                        <div>
+                            <h3>Términos y condiciones</h3>
+                            <p>Condiciones para utilizar Color Mix.</p>
+                        </div>
+                        <span class="document-arrow">→</span>
+                    </a>
+
+                    <a href="pages/eliminacion-datos.html" class="document-card">
+                        <span>🗑️</span>
+                        <div>
+                            <h3>Eliminación de datos</h3>
+                            <p>Información sobre solicitudes de eliminación.</p>
+                        </div>
+                        <span class="document-arrow">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section class="contact-section" id="contacto">
+
+            <div class="container contact-content">
+
+                <span class="section-label">¿NECESITAS AYUDA?</span>
+
+                <h2>Estamos aquí para ayudarte.</h2>
+
+                <p>
+                    Consulta nuestra documentación o comunícate
+                    con el equipo de Color Mix.
+                </p>
+
+                <!-- Agregaremos el correo cuando lo definamos -->
+                <a href="mailto:soporte@colormixgame.com"
+                   class="btn btn-primary">
+                    Contactar soporte →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <a href="#inicio" class="logo footer-logo">
+                <span class="logo-icon">●</span>
+                Color<span>Mix</span>
+            </a>
+
+            <p>
+                © <span id="currentYear"></span> Color Mix.
+                Todos los derechos reservados.
+            </p>
+
+            <div class="footer-links">
+                <a href="pages/privacidad.html">Privacidad</a>
+                <a href="pages/terminos.html">Términos</a>
+                <a href="pages/contacto.html">Contacto</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
