@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Descubre Color Mix, un divertido juego móvil de lógica donde debes organizar bolas de colores en diferentes recipientes.">
+          content="Descubre Color Mixx, un divertido juego móvil de lógica donde debes organizar bolas de colores en diferentes recipientes.">
 
     <meta name="theme-color" content="#171027">
 
-    <title>Color Mix | Juego de colores</title>
+    <title>Color Mixx | Juego de colores</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,8 +23,12 @@
         <nav class="navbar container">
 
             <a href="#inicio" class="logo">
-                <span class="logo-icon">●</span>
-                Color<span>Mix</span>
+                <img
+                    src="images/logo.png"
+                    alt="Logotipo de Color Mix"
+                    class="logo-image"
+                >
+                <span class="logo-name">Color <span>Mixx</span></span>
             </a>
 
             <button class="menu-toggle"
@@ -34,7 +40,7 @@
 
             <ul class="nav-links" id="navLinks">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#juego">El juego</a></li>
+                <li><a href="#como-jugar">Cómo jugar</a></li>
                 <li><a href="#caracteristicas">Características</a></li>
                 <li><a href="#documentacion">Documentación</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -61,7 +67,7 @@
                     <h1>
                         Piensa, organiza
                         y disfruta con
-                        <span>Color Mix.</span>
+                        <span>Color Mixx.</span>
                     </h1>
 
                     <p>
@@ -93,47 +99,19 @@
                 <!-- ILUSTRACIÓN TEMPORAL DEL JUEGO -->
                 <div class="hero-visual">
 
-                    <div class="game-card">
+                    <div class="phone-frame">
 
-                        <div class="game-card-header">
-                            <span>COLOR MIX</span>
-                            <span class="level-badge">NIVEL 01</span>
-                        </div>
-
-                        <div class="tubes">
-
-                            <div class="tube">
-                                <span class="ball ball-red"></span>
-                                <span class="ball ball-blue"></span>
-                                <span class="ball ball-yellow"></span>
-                                <span class="ball ball-green"></span>
-                            </div>
-
-                            <div class="tube">
-                                <span class="ball ball-green"></span>
-                                <span class="ball ball-red"></span>
-                                <span class="ball ball-blue"></span>
-                                <span class="ball ball-yellow"></span>
-                            </div>
-
-                            <div class="tube">
-                                <span class="ball ball-yellow"></span>
-                                <span class="ball ball-green"></span>
-                                <span class="ball ball-red"></span>
-                                <span class="ball ball-blue"></span>
-                            </div>
-
-                        </div>
-
-                        <div class="game-card-footer">
-                            <span>🎯 Organiza los colores</span>
-                        </div>
+                        <img
+                            src="images/screenshots/gameplay.jpeg"
+                            alt="Captura real de una partida de Color Mixx en el nivel 60"
+                            class="gameplay-image"
+                        >
 
                     </div>
 
-                    <div class="floating-ball floating-one"></div>
-                    <div class="floating-ball floating-two"></div>
-                    <div class="floating-ball floating-three"></div>
+                    <p class="gameplay-caption">
+                        🎮 Captura real de Color Mixx · Nivel 60
+                    </p>
 
                 </div>
 
@@ -148,12 +126,12 @@
             <div class="container">
 
                 <div class="section-heading">
-                    <span class="section-label">CONOCE COLOR MIX</span>
+                    <span class="section-label">CONOCE COLOR MIXX</span>
 
                     <h2>Un desafío para tu mente</h2>
 
                     <p>
-                        Color Mix es un videojuego móvil en el que debes
+                        Color Mixx es un videojuego móvil en el que debes
                         organizar bolas de diferentes colores dentro
                         de recipientes. Cada nivel representa un nuevo
                         desafío que requiere concentración y estrategia.
@@ -195,6 +173,94 @@
 
         </section>
 
+        <!-- CÓMO JUGAR -->
+        <section class="section how-to-section" id="como-jugar">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">EMPIEZA A JUGAR</span>
+
+                    <h2>¿Cómo se juega Color Mixx?</h2>
+
+                    <p>
+                        Organiza las bolas de colores dentro de los recipientes,
+                        planifica tus movimientos y completa cada desafío.
+                    </p>
+                </div>
+
+                <div class="steps-grid">
+
+                    <article class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon">👀</div>
+
+                        <h3>Observa el tablero</h3>
+
+                        <p>
+                            Examina los recipientes y los diferentes colores
+                            disponibles antes de comenzar a mover las bolas.
+                        </p>
+                    </article>
+
+                    <article class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon">👆</div>
+
+                        <h3>Selecciona y mueve</h3>
+
+                        <p>
+                            Selecciona un recipiente y elige el destino
+                            adecuado para organizar las bolas.
+                        </p>
+                    </article>
+
+                    <article class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon">🎨</div>
+
+                        <h3>Organiza los colores</h3>
+
+                        <p>
+                            Agrupa las bolas de acuerdo con su color
+                            hasta completar correctamente los recipientes.
+                        </p>
+                    </article>
+
+                    <article class="step-card">
+                        <div class="step-number">04</div>
+                        <div class="step-icon">🏆</div>
+
+                        <h3>Completa los niveles</h3>
+
+                        <p>
+                            Resuelve el desafío, supera el nivel y
+                            continúa avanzando en Color Mixx.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="game-tips">
+
+                    <div class="game-tips-icon">💡</div>
+
+                    <div>
+                        <h3>Utiliza tus herramientas estratégicamente</h3>
+
+                        <p>
+                            Durante la partida puedes reiniciar el nivel,
+                            mezclar las bolas o utilizar capacidad adicional
+                            cuando necesites más espacio.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
 
         <!-- CARACTERÍSTICAS -->
         <section class="section features-section" id="caracteristicas">
@@ -208,7 +274,7 @@
 
                     <p>
                         Descubre las herramientas que forman parte
-                        de la experiencia de Color Mix.
+                        de la experiencia de Color Mixx.
                     </p>
                 </div>
 
@@ -282,7 +348,7 @@
                 <div class="section-heading">
                     <span class="section-label">INFORMACIÓN OFICIAL</span>
 
-                    <h2>Documentación de Color Mix</h2>
+                    <h2>Documentación de Color Mixx</h2>
 
                     <p>
                         Consulta las políticas y condiciones relacionadas
@@ -314,7 +380,7 @@
                         <span>📄</span>
                         <div>
                             <h3>Términos y condiciones</h3>
-                            <p>Condiciones para utilizar Color Mix.</p>
+                            <p>Condiciones para utilizar Color Mixx.</p>
                         </div>
                         <span class="document-arrow">→</span>
                     </a>
@@ -346,11 +412,11 @@
 
                 <p>
                     Consulta nuestra documentación o comunícate
-                    con el equipo de Color Mix.
+                    con el equipo de Color Mixx.
                 </p>
 
                 <!-- Agregaremos el correo cuando lo definamos -->
-                <a href="mailto:soporte@colormixgame.com"
+                <a href="mailto:managexrmr@gmail.com"
                    class="btn btn-primary">
                     Contactar soporte →
                 </a>
@@ -367,13 +433,18 @@
 
         <div class="container footer-content">
 
+            
             <a href="#inicio" class="logo footer-logo">
-                <span class="logo-icon">●</span>
-                Color<span>Mix</span>
+                <img
+                    src="images/logo.png"
+                    alt="Logotipo de Color Mixx"
+                    class="logo-image"
+                >
+                <span class="logo-name">Color <span>Mixx</span></span>
             </a>
 
             <p>
-                © <span id="currentYear"></span> Color Mix.
+                © <span id="currentYear"></span> Color Mixx.
                 Todos los derechos reservados.
             </p>
 

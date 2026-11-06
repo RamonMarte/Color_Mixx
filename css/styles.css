@@ -62,23 +62,45 @@ a {
     align-items: center;
 }
 
+/*caambios desde aqui*/
 .logo {
-    color: white;
-    font-size: 25px;
-    font-weight: 900;
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 10px;
+    color: white;
+    font-size: 23px;
+    font-weight: 900;
 }
 
-.logo > span:last-child {
+.logo-image {
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border-radius: 9px;
+    background: #000;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.logo-name {
+    color: white;
+    letter-spacing: -0.8px;
+}
+
+.logo-name span {
     color: #a78bfa;
 }
 
-.logo-icon {
-    color: #f9c74f;
-    font-size: 31px;
+.footer-logo .logo-image {
+    width: 35px;
+    height: 35px;
 }
+
+.footer-logo .logo-name {
+    font-size: 21px;
+}
+
+/**/
+
 
 .nav-links {
     display: flex;
@@ -221,123 +243,62 @@ a {
 ================================= */
 
 .hero-visual {
-    min-height: 390px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.game-card {
-    width: min(100%, 370px);
-    padding: 30px 22px;
-    border: 1px solid rgba(255,255,255,0.2);
-    background: rgba(255,255,255,0.09);
-    border-radius: 22px;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 30px 80px rgba(0,0,0,0.25);
-    z-index: 2;
-}
-
-.game-card-header {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-weight: 900;
-    font-size: 16px;
-}
-
-.level-badge {
-    color: #d4c0ff;
-    font-size: 10px;
-    background: rgba(167,139,250,0.2);
-    padding: 8px 11px;
-    border-radius: 20px;
-}
-
-.tubes {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 55px 0;
-}
-
-.tube {
-    width: 57px;
-    height: 174px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    gap: 1px;
-    overflow: hidden;
-    border: 3px solid rgba(255,255,255,0.65);
-    border-top: none;
-    border-radius: 0 0 25px 25px;
-    background: rgba(255,255,255,0.08);
-    padding-bottom: 5px;
+    gap: 18px;
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    min-height: 580px;
 }
 
-.ball {
-    width: 42px;
-    height: 35px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    box-shadow: inset -4px -5px 8px rgba(0,0,0,0.17),
-                inset 3px 3px 7px rgba(255,255,255,0.3);
+.phone-frame {
+    width: 275px;
+    max-width: 100%;
+    padding: 9px;
+    border-radius: 38px;
+
+    background: linear-gradient(
+        145deg,
+        #9b67ff,
+        #11d9ff,
+        #9b67ff
+    );
+
+    box-shadow:
+        0 20px 65px rgba(0,0,0,0.35),
+        0 0 30px rgba(128,83,233,0.25);
 }
 
-.ball-red {
-    background: #ff5577;
+.gameplay-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 29px;
+    object-fit: contain;
 }
 
-.ball-blue {
-    background: #54aaff;
-}
-
-.ball-yellow {
-    background: #ffd45d;
-}
-
-.ball-green {
-    background: #4dd6a0;
-}
-
-.game-card-footer {
-    text-align: center;
-    color: #d9cdec;
+.gameplay-caption {
+    color: #c9bbdf;
     font-size: 12px;
+    font-weight: 600;
+    text-align: center;
 }
 
-.floating-ball {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: absolute;
-}
+@media (max-width: 850px) {
 
-.floating-one {
-    background: #ff5577;
-    top: 40px;
-    right: 25px;
-}
+    .hero-visual {
+        min-height: auto;
+        margin-top: 20px;
+    }
 
-.floating-two {
-    background: #ffd45d;
-    bottom: 35px;
-    left: 35px;
-    width: 28px;
-    height: 28px;
-}
+    .phone-frame {
+        width: min(275px, 75vw);
+    }
 
-.floating-three {
-    background: #4dd6a0;
-    top: 100px;
-    left: 20px;
-    width: 22px;
-    height: 22px;
 }
-
 
 /* =================================
    SECCIONES GENERALES
@@ -378,7 +339,7 @@ a {
 
 
 /* =================================
-   SOBRE COLOR MIX
+   SOBRE COLOR MIXX
 ================================= */
 
 .about-grid {
@@ -680,6 +641,216 @@ a {
 
     .hero-visual {
         min-height: 320px;
+    }
+
+}
+
+
+/* =================================
+   AJUSTES DE DISTRIBUCIÓN
+================================= */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.hero-content {
+    width: min(1140px, 90%);
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(280px, 0.9fr);
+    align-items: center;
+    gap: 45px;
+}
+
+.hero-text,
+.hero-visual {
+    min-width: 0;
+}
+
+/* TABLETAS Y PANTALLAS PEQUEÑAS */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        gap: 15px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        padding: 25px 5%;
+        background: #211638;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hero-content {
+        grid-template-columns: minmax(0, 1fr);
+        text-align: center;
+        gap: 35px;
+    }
+
+    .hero-text > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons,
+    .hero-info {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        min-height: auto;
+        margin-top: 15px;
+    }
+
+    .phone-frame {
+        width: 250px;
+    }
+}
+
+/* TELÉFONOS */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 38px;
+        letter-spacing: -1.5px;
+    }
+
+    .hero {
+        padding: 65px 0;
+    }
+
+    .phone-frame {
+        width: min(250px, 75vw);
+    }
+
+}
+
+/* =================================
+   CÓMO JUGAR COLOR MIXX
+================================= */
+
+.how-to-section {
+    background: #f7f5fc;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.step-card {
+    position: relative;
+    padding: 28px 23px;
+    background: white;
+    border: 1px solid #ece8f5;
+    border-radius: 16px;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.step-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(60, 35, 100, 0.10);
+}
+
+.step-number {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    color: #d9cff1;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.step-icon {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    background: #eee8ff;
+    border-radius: 15px;
+    font-size: 27px;
+    margin-bottom: 24px;
+}
+
+.step-card h3 {
+    color: #211638;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.step-card p {
+    color: #777486;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* CONSEJO DEL JUEGO */
+
+.game-tips {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+    padding: 27px 30px;
+    border-radius: 15px;
+    background: linear-gradient(120deg, #24153e, #43246e);
+    color: white;
+}
+
+.game-tips-icon {
+    font-size: 35px;
+    flex-shrink: 0;
+}
+
+.game-tips h3 {
+    font-size: 16px;
+    margin-bottom: 9px;
+}
+
+.game-tips p {
+    color: #d1c5e5;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .steps-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .game-tips {
+        align-items: flex-start;
+        padding: 22px;
     }
 
 }
