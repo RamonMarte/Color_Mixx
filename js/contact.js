@@ -60,7 +60,7 @@ if (contactForm) {
         // Comprobar que existe un correo configurado.
         if (
             !SUPPORT_EMAIL ||
-            SUPPORT_EMAIL === "REEMPLAZA_CON_TU_CORREO"
+            SUPPORT_EMAIL === "managexrmr@gmail.com"
         ) {
 
             showFeedback(
