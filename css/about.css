@@ -1,0 +1,434 @@
+
+/* =================================
+   PRESENTACIÓN ACERCA DE COLOR MIXX
+================================= */
+
+.about-hero {
+    padding: 85px 0;
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(128, 83, 233, 0.30),
+            transparent 38%
+        ),
+        linear-gradient(120deg, #171027, #30204d);
+    color: white;
+    overflow: hidden;
+}
+
+.about-hero-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+    align-items: center;
+    gap: 65px;
+}
+
+.about-label,
+.about-section-label {
+    display: inline-block;
+    color: #a78bfa;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 18px;
+}
+
+.about-hero-text h1 {
+    max-width: 600px;
+    font-size: clamp(38px, 5vw, 57px);
+    line-height: 1.15;
+    font-weight: 900;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.about-hero-text h1 span {
+    color: #a78bfa;
+}
+
+.about-hero-text > p {
+    max-width: 520px;
+    color: #c9bfdb;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.about-hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.about-image-frame {
+    width: 260px;
+    max-width: 100%;
+    padding: 8px;
+    border-radius: 30px;
+    background: linear-gradient(
+        145deg,
+        #9b67ff,
+        #11d9ff,
+        #9b67ff
+    );
+    box-shadow: 0 25px 70px rgba(0,0,0,0.35);
+}
+
+.about-image-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 23px;
+}
+
+.about-image-caption {
+    color: #c9bfdb;
+    font-size: 12px;
+}
+
+
+/* =================================
+   INTRODUCCIÓN
+================================= */
+
+.about-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.about-introduction {
+    max-width: 820px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-introduction h2,
+.about-heading h2,
+.mission-content h2 {
+    color: #211638;
+    font-size: clamp(29px, 4vw, 39px);
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: 22px;
+}
+
+.about-introduction p {
+    color: #777486;
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 16px;
+}
+
+
+/* =================================
+   OBJETIVO DEL JUEGO
+================================= */
+
+.about-mission-section {
+    padding: 85px 0;
+    background: #f7f5fc;
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+.mission-content h2 {
+    margin-bottom: 20px;
+}
+
+.mission-content p {
+    color: #777486;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.mission-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mission-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 22px;
+    background: white;
+    border: 1px solid #ece8f5;
+    border-radius: 14px;
+    transition: 0.25s;
+}
+
+.mission-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 10px 30px rgba(60,35,100,0.08);
+}
+
+.mission-card > span {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    border-radius: 13px;
+    background: #eee8ff;
+    font-size: 25px;
+}
+
+.mission-card h3 {
+    color: #211638;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.mission-card p {
+    color: #777486;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   CARACTERÍSTICAS
+================================= */
+
+.about-heading {
+    max-width: 680px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.about-heading p {
+    color: #777486;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.about-feature {
+    padding: 28px;
+    border: 1px solid #ece8f5;
+    border-radius: 15px;
+    transition: 0.25s;
+}
+
+.about-feature:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(60,35,100,0.08);
+}
+
+.about-feature > span {
+    display: inline-grid;
+    place-items: center;
+    width: 53px;
+    height: 53px;
+    border-radius: 13px;
+    background: #eee8ff;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.about-feature h3 {
+    color: #211638;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.about-feature p {
+    color: #777486;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   TECNOLOGÍAS
+================================= */
+
+.about-tech-section {
+    padding: 90px 0;
+    background: #f7f5fc;
+}
+
+.technology-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.technology-card {
+    padding: 27px;
+    border: 1px solid #ece8f5;
+    border-radius: 14px;
+    background: white;
+    transition: 0.25s;
+}
+
+.technology-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(60,35,100,0.08);
+}
+
+.technology-icon {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    border-radius: 13px;
+    background: #eee8ff;
+    color: #7045cf;
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.technology-card h3 {
+    color: #211638;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.technology-card p {
+    color: #777486;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* =================================
+   INFORMACIÓN DE LA APLICACIÓN
+================================= */
+
+.about-information {
+    padding: 75px 0;
+    background: white;
+}
+
+.about-information h2 {
+    text-align: center;
+    color: #211638;
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+.information-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid #ece8f5;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.information-grid > div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 24px;
+    border-right: 1px solid #ece8f5;
+    border-bottom: 1px solid #ece8f5;
+}
+
+.information-grid span {
+    color: #777486;
+    font-size: 12px;
+}
+
+.information-grid strong {
+    color: #30204d;
+    font-size: 14px;
+}
+
+
+/* =================================
+   LLAMADA A LA ACCIÓN
+================================= */
+
+.about-cta {
+    padding: 85px 0;
+    background: linear-gradient(120deg, #24153e, #43246e);
+    text-align: center;
+    color: white;
+}
+
+.about-cta h2 {
+    font-size: clamp(27px, 4vw, 36px);
+    margin-bottom: 17px;
+}
+
+.about-cta p {
+    color: #d1c5e5;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 850px) {
+
+    .about-hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 45px;
+    }
+
+    .about-hero-text > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-features-grid,
+    .technology-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-hero-image {
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .about-hero {
+        padding: 65px 0;
+    }
+
+    .about-hero-text h1 {
+        font-size: 38px;
+    }
+
+    .about-section,
+    .about-tech-section {
+        padding: 65px 0;
+    }
+
+    .about-features-grid,
+    .technology-grid,
+    .information-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .information-grid > div {
+        border-right: none;
+    }
+
+}
